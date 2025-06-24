@@ -66,4 +66,83 @@ WeatherClient/
    gradle run
 <img width="488" alt="image" src="https://github.com/user-attachments/assets/0a8411fa-259a-4fa5-819a-ffc8875d919f" />
 
+# TASK 3
+# Multithreaded Chat Application (Java Sockets + Threads)
+
+## Project Overview
+
+This project demonstrates a real-time client-server chat system using Java Sockets and Multithreading. It allows multiple clients to connect to a single server and communicate with each other concurrently.
+
+## Features
+
+- Supports multiple clients using threads  
+- Real-time messaging across clients  
+- Simple console-based chat UI  
+- Server logs connections and disconnections  
+- Broadcasts messages to all connected clients  
+
+---
+
+## Technologies Used
+
+- Java (JDK 8+)
+- Java Sockets (java.net)
+- Multithreading (java.lang.Thread)
+- I/O Streams (java.io)
+
+---
+
+## Project Structure
+
+```
+javaProjectIntern/
+└── task3/
+    ├── chatServer.java   # Server-side socket and thread logic
+    └── chatClient.java   # Client-side interaction logic
+```
+
+Both files include the declaration:
+```java
+package task3;
+```
+
+---
+
+## How to Run
+
+### 1. Compile the Java Files
+
+Open terminal in the `javaProjectIntern` directory:
+```bash
+javac task3/chatServer.java task3/chatClient.java
+```
+
+---
+
+### 2. Run the Server
+
+```bash
+java task3.chatServer
+```
+
+Expected:
+```
+Server is running on port 1234...
+```
+
+---
+
+### 3. Run One or More Clients (in separate terminals)
+
+```bash
+java task3.chatClient
+```
+
+Enter your name when prompted, then start chatting.
+
+---
+
+<img width="518" alt="image" src="https://github.com/user-attachments/assets/3f465986-2107-4e64-a8d2-a37c227e6118" />
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/06e87d87-08c3-471e-9071-d2c7b53bf48d" />
+
 
