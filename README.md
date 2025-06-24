@@ -145,4 +145,73 @@ Enter your name when prompted, then start chatting.
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/3f465986-2107-4e64-a8d2-a37c227e6118" />
 <img width="575" alt="image" src="https://github.com/user-attachments/assets/06e87d87-08c3-471e-9071-d2c7b53bf48d" />
 
+# TASK 4
+# AI-Based Recommendation System (Java + Apache Mahout)
+
+This project demonstrates an AI-powered recommendation system built using Java and Apache Mahout. It applies user-based collaborative filtering to recommend items based on user preferences from a dataset.
+
+## Project Structure
+
+```
+task4/
+├── data/
+│   └── ratings.csv
+├── src/
+│   └── main/
+│       └── java/
+│           └── RecommendationEngine.java
+├── build.gradle
+├── settings.gradle
+```
+
+## Technologies Used
+
+- Java
+- Apache Mahout (v0.9)
+- Gradle
+- SLF4J (for logging)
+
+## Sample Dataset
+
+Path: `data/ratings.csv`
+
+```
+1,101,5.0
+1,102,3.0
+1,103,2.5
+2,101,2.0
+2,102,2.5
+2,103,5.0
+2,104,2.0
+3,101,2.5
+3,104,4.0
+3,105,4.5
+4,101,5.0
+4,103,3.0
+4,104,4.5
+4,105,4.0
+```
+
+Format: `userID,itemID,preferenceScore`
+
+## How to Build and Run
+
+### 1. Navigate to the project folder:
+```bash
+cd task4
+```
+
+### 2. Build the project using Gradle:
+```bash
+gradle build
+```
+
+### 3. Run the recommendation engine:
+```bash
+gradle run
+```
+
+<img width="578" alt="image" src="https://github.com/user-attachments/assets/896392d7-a519-4b9f-a125-e8108b90e14a" />
+
+
 
